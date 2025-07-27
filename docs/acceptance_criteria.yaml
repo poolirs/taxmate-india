@@ -1,0 +1,17 @@
+auth:
+  - id: US01
+    desc: "Unauthenticated user receives 401 on any POST"
+
+documents:
+  - id: UP01
+    desc: "User uploads a PDF <=10MB and receives doc_id in JSON"
+  - id: UP02
+    desc: "Parser finishes within 30s and returns status=done"
+
+calculator:
+  - id: TC01
+    desc: "POST /calculate returns old and new regime tax and recommendation"
+
+chat:
+  - id: CH01
+    desc: "Ask endpoint responds in <3s with answer and citations"
